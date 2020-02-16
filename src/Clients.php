@@ -6,8 +6,9 @@ use Mozafar\WHMCS\Contracts\ClientsInterface;
 
 class Clients extends WHMCS implements ClientsInterface
 {
-    public function getClients()
+    public function getClients($params)
     {
-        
+        $params['action'] = 'GetClients';
+        return $this->makeRequest($params);
     }
 }
