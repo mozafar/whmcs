@@ -16,17 +16,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Mozafar\\WHMCS\\": "src"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+            "Mozafar\\WHMCS\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Mozafar\\WHMCS\\Providers\\WHMCSServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "WHMCS": "Mozafar\\WHMCS\\Facades\\WHMCS"
+            }
         }
     }
 }

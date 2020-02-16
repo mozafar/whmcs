@@ -1,5 +1,7 @@
 <?php
 
+namespace Mozafar\WHMCS\Facades;
+
 use Illuminate\Support\Facades\Facade;
 
 class WHMCS extends Facade

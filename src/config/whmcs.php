@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'api_url' => 'https://www.yourdomain.com/path/to/whmcs/includes/api.php',
-    'identifier' => '',
-    'secret' => '',
-    'paymentmethod' => ''
+    'api_url' => env('WHMCS_API_URL'),
+    'identifier' => env('WHMCS_IDENTIFIER'),
+    'secret' => env('WHMCS_SECRET'),
+    'paymentmethod' => env('WHMCS_PAYMENT'),
 ];
