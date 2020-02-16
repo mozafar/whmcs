@@ -1,0 +1,32 @@
+{
+    "name": "mozafar/whmcs",
+    "description": "WHMCS API client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mozafar Gholami",
+            "email": "mozafar.gholami@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.2",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mozafar\\WHMCS\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mozafar\\WHMCS\\Providers\\WHMCSServiceProvider"
+            ]
+        }
+    }
+}
